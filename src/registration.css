@@ -1,0 +1,9 @@
+.main{
+    align-items: center;
+    background-color: cyan;
+    background-image: url("./img/Blood_Donation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
