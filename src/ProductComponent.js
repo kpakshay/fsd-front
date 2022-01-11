@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {AppBar, Box, Toolbar, Button, IconButton, Typography, Grid, Card, CardContent } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import './product.css'
 import axios from 'axios';
 import jwt from 'jsonwebtoken';
 function ProductComponent(props){
@@ -35,7 +35,7 @@ function ProductComponent(props){
                  <Box sx={{ flexGrow: 1 }}>
                          <AppBar position="static">
                              <Toolbar>
-                             <IconButton
+                             {/* <IconButton 
                                  size="large"
                                  edge="start"
                                  color="inherit"
@@ -43,8 +43,8 @@ function ProductComponent(props){
                                  sx={{ mr: 2 }}
                              >
                                  <MenuIcon />
-                             </IconButton>
-                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                             </IconButton> */}
+                             <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
                                  Blood Bank
                              </Typography>
                              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -60,7 +60,8 @@ function ProductComponent(props){
                              </Toolbar>
                          </AppBar>
                              
-                             <div style={{padding: '25px'}}>
+                             <div className='main' style={{padding: '25px'}}>
+                                 <h2>AVAILABLE DONORS</h2>
                              <Grid container spacing={2}>
                                  {productList.map(row=> (
                                      <Grid item key={row._id}>

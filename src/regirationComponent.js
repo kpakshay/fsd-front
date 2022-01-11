@@ -168,7 +168,7 @@ class RegistrationComponent extends Component {
                 <span style={{ color: 'red' }}> {this.state.errors.address} </span>
             </div>
             <br />
-            <button type="submit" > Submit </button> &nbsp;
+            <button type="submit" > Register </button> &nbsp;
             <button type="button" onClick={this.handleReset}>
               {' '}
               Reset

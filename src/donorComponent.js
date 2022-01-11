@@ -57,15 +57,7 @@ class donorComponent extends React.Component {
             <>
             <AppBar position="static">
                              <Toolbar>
-                             <IconButton
-                                 size="large"
-                                 edge="start"
-                                 color="inherit"
-                                 aria-label="menu"
-                                 sx={{ mr: 2 }}
-                             >
-                                 <MenuIcon />
-                             </IconButton>
+                             
                              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                                  Blood - Management
                              </Typography>
@@ -81,7 +73,7 @@ class donorComponent extends React.Component {
                              <Button color="inherit" onClick={logout}>Logout</Button>
                              </Toolbar>
                          </AppBar>
-                <div style={{ padding: '20px' }}>
+                <div className='main' style={{ padding: '20px' }}>
                     <h3>Add blood donor details</h3>
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <div>
