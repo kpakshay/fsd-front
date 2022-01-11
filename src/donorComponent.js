@@ -47,7 +47,7 @@ class donorComponent extends React.Component {
             }
         }
         const home = () => {
-            this.props.history.push('/product')
+            this.props.history.push('/product');
         }
         const logout = () => {
             localStorage.removeItem('token');

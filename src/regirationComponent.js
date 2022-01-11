@@ -79,9 +79,10 @@ class RegistrationComponent extends Component {
   render() {
     return (
       <>
-        <div className='main'>
-          
-          <form onSubmit={(e) => this.handleSubmit(e)}>
+        <div className='form'>
+          <h2>Register Here</h2>
+          <div className='input-container'>
+          <form id="ff" onSubmit={(e) => this.handleSubmit(e)}>
             <div>
               <label>User Name </label>
               <input
@@ -173,6 +174,8 @@ class RegistrationComponent extends Component {
               Reset
             </button>
           </form>
+          Are you a member!!? Go to <a href="/">login</a>
+        </div>
         </div>
       </>
     );
