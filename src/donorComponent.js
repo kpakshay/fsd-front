@@ -26,7 +26,7 @@ class donorComponent extends React.Component {
             }else{
                 try {
                     var response = await axios.post(
-                        'http://localhost:3001/users/addblood', {
+                        'https://fsd-bloodbank.herokuapp.com/users/addblood', {
                             bloodgroup: this.state.bloodgroup,
                         quantity: this.state.quantity,
                         name: this.state.name,

@@ -13,7 +13,7 @@ function ProductComponent(props){
         if(decodedToken.exp*1000 <= Date.now()){
             props.history.push('/')
         } else {console.log("hii");
-            var response = await axios.get('http://localhost:3001/users/getblood', 
+            var response = await axios.get('https://fsd-bloodbank.herokuapp.com/users/getblood', 
             {
                 
                 headers: {
@@ -35,15 +35,7 @@ function ProductComponent(props){
                  <Box sx={{ flexGrow: 1 }}>
                          <AppBar position="static">
                              <Toolbar>
-                             {/* <IconButton 
-                                 size="large"
-                                 edge="start"
-                                 color="inherit"
-                                 aria-label="menu"
-                                 sx={{ mr: 2 }}
-                             >
-                                 <MenuIcon />
-                             </IconButton> */}
+                             
                              <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
                                  Blood Bank
                              </Typography>
@@ -54,8 +46,7 @@ function ProductComponent(props){
                              <Button color="inherit" onClick={add}>Add Donor</Button>
                              </Typography>
                              
-                             {/* <ShoppingCartIcon /> */}
-                             {/* <h3>{cart} </h3> */}
+                             
                              <Button color="inherit" onClick={logout}>Logout</Button>
                              </Toolbar>
                          </AppBar>

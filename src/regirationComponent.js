@@ -34,7 +34,7 @@ class RegistrationComponent extends Component {
 
     try{
         var response = await axios.post(
-        'http://localhost:3001/register/registeruser', {
+        'https://fsd-bloodbank.herokuapp.com/register/registeruser', {
             username: this.state.username,
             name: this.state.name,
             phone:this.state.phone,
