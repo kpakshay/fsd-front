@@ -28,6 +28,9 @@ class LoginComponent extends React.Component{
                 console.warn(err)
             }
         }
+        const register= ()=>{
+            this.props.history.push('/register');
+        }
         return(
             <div className="form">
                  <h2>Welcome!!</h2>
@@ -45,10 +48,11 @@ class LoginComponent extends React.Component{
                             onChange={(e)=> this.setState({password: e.target.value})}></input>
                         </div> <br/>
                         <div className="button-container">
-                        <button type="submit" onClick={(e)=>handleSubmit(e)}>LOG IN</button> <br/>
+                        <button type="submit" onClick={(e)=>handleSubmit(e)}>LOG IN</button>&nbsp;&nbsp;
+                        <button type="submit" onClick={(e)=>register(e)}> register</button> <br/>
                         </div>
                     </form>
-                    NOt a member!!? Register <a href="/register">here</a>
+                    {/* NOt a member!!? Register <a href="/register">here</a> */}
                 </div>
             </div>
 

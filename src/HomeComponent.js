@@ -7,6 +7,7 @@ import RegistrationComponent from './regirationComponent';
 function HomeComponent(props){
     return(
         <>
+
             <div>
                 <BrowserRouter>
                     <Switch>
